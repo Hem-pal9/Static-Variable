@@ -1,0 +1,29 @@
+public class StaticVariable {
+	int rollno;
+	String name;
+    static String college="ITC";
+	
+	StaticVariable (int r, String n){
+	String college = "mmn";
+	rollno=r;
+    name=n;
+	
+	}
+public void display() {System.out.println("Roll No:" +rollno+","+" "+"Name:"+name+","+" "+"College:"+college);
+
+}
+}
+
+
+//Main Class
+
+public class StaticVariable1 {
+	 public static void main(String args[]){  
+		 StaticVariable s1= new StaticVariable(111,"Mohit");
+		 StaticVariable s2= new StaticVariable(222, "Mudit");
+		 
+		 s1.display();
+		 s2.display();
+		 
+	 }
+}
